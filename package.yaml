@@ -1,0 +1,37 @@
+name: hs-json-parser
+version: 0.1.0.0
+#synopsis:
+description: A lightweight JSON parser I built as a learning project in Haskell.
+homepage: https://github.com/vantm/hs-json-parser
+license: MIT
+author: Van Tran
+maintainer: hi@vantm.com
+copyright: 2025 Van Tran
+category: Web
+extra-source-files:
+  - README.md
+  - CHANGELOG.md
+
+dependencies:
+  - base >= 4.18 && < 5
+  - directory
+
+ghc-options:
+  - -Wall
+  - -Wcompat
+  - -Widentities
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wmissing-export-lists
+  - -Wmissing-home-modules
+  - -Wpartial-fields
+  - -Wredundant-constraints
+
+executables:
+  hs-json-parser:
+    source-dirs: src
+    main: Main.hs
+    dependencies:
+      - pretty-simple
+
+github: vantm/hs-json-parser

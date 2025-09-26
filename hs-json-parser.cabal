@@ -1,0 +1,38 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.38.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           hs-json-parser
+version:        0.1.0.0
+description:    A lightweight JSON parser I built as a learning project in Haskell.
+category:       Web
+homepage:       https://github.com/vantm/hs-json-parser
+bug-reports:    https://github.com/vantm/hs-json-parser/issues
+author:         Van Tran
+maintainer:     hi@vantm.com
+copyright:      2025 Van Tran
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/vantm/hs-json-parser
+
+executable hs-json-parser
+  main-is: Main.hs
+  other-modules:
+      Paths_hs_json_parser
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.18 && <5
+    , directory
+    , pretty-simple
+  default-language: Haskell2010
